@@ -1,0 +1,458 @@
+ue /* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    min-height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+button:hover, form .Sammyinkr-enviar input:hover{
+    background-color: #2df500;
+    transform: scale(1.05);
+}
+
+/* BOTOES */
+.Sammyinkr-contact button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #00ff08;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* TITULOS */
+h2.Titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.Titulo span{
+    color: #00ff08;
+}
+
+/* CABEÇALHO */
+header {
+    padding: 20px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    transition: .2s ease;
+    display: inline-block;
+}
+
+header a:hover {
+    color: #008ff5;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center; /* Alinha verticalmente imagem com texto */
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #008ff5;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades.flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .3s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #008ff5
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: aqua;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .Discord-bots {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .3s;
+}
+
+.especialidades .Discord-bots:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #008ff5;
+}
+
+.especialidades .Discord-bots i{
+    font-size: 70px;
+    color: aqua;
+}
+
+.especialidades .Discord-bots h3{
+    font-size: 28;
+    margin: 15px 0;
+}
+
+.especialidades .Blogs {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .3s;
+}
+
+.especialidades .Blogs:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #008ff5;
+}
+.especialidades .Blogs i{
+    font-size: 70px;
+    color: aqua;
+}
+
+.especialidades .Blogs h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO SOBRE */
+section.Sobre{
+    padding: 80px 4%;
+}
+
+section.Sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.Sobre .txt-sobre{
+    color: #fff;
+}
+
+.Sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.Sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+
+.Sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.Sammyinkr-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTFOLIO */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #008ff556;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 20s ease;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 0% 0%; /* move para a direita quando o mouse estiver em cima */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILO FORMS */
+section.forms{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .Sammyinkr-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .Sammyinkr-enviar input{
+    width: 120px;
+    background-color: #00ff08;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO FOOTER */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #008ff556;
+}
+
+footer .flex{
+    display: flex;
+    align-items: center;      /* centraliza verticalmente */
+    justify-content: space-between; /* logo esquerda, links direita */
+    flex-wrap: wrap;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #00ff08;
+}
+
+footer .logo-footer{
+    max-width: 150px;         /* ajusta tamanho da logo */
+}
+
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+@media screen and (max-width: 1020px){
+    /* CLASES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .Sammyinkr-contact{
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    .topo-do-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding:20px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.Sobre {
+        padding: 80px 8%;
+    }
+    
+    .Sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .Sammyinkr-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* PORTFOLIO */
+    section.portfolio{
+        padding: 80px 8%;
+    }
+    .img-port{
+        width: 100%;
+        height: 460px;
+        background-size: cover;
+        background-position: 100% 0%;
+        transition: 20s ease;
+        cursor: pointer;
+        border-radius: 40px;
+        position: relative;
+    }
+
+}
